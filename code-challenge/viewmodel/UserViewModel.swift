@@ -18,26 +18,25 @@ final class UserViewModel: ObservableObject {
     func getProfile() {
         loading = true
         let url = Endpoint.instance.get_profile
-        repo.getProfile(url: url) { (res, err) in
+        repo.getProfile(url: url) { result in
             self.loading = false
-            // If Error arises from Network
-            if let err = err {
-                print(err.localizedDescription)
+
+            switch result {
+            case .success(let res):
+                // Exception errors from server
+                if let exeption = res.exceptionName {
+                    self.status = "Server error: \(exeption)"
+                    self.showAlert = true
+                }
+                
+                if let u = res.data {
+                    self.user = u
+                }
+                
+            case .failure(let err):
+                // Network Error
                 self.status = err.localizedDescription
                 self.showAlert = true
-                return
-            }
-            
-            // If Error arises from response details
-            if let exception = res?.exceptionName {
-                print("Babylon Exception Error", exception)
-                self.status = exception
-                self.showAlert = true
-                return
-            }
-            
-            if let user = res?.data {
-                self.user = user
             }
         }
     }
@@ -55,25 +54,27 @@ final class UserViewModel: ObservableObject {
         "firstName": firstName,
         "lastName": lastName ] as [String : Any]
         
-        repo.handlePost(url: url, param: param) { (res, err) in
+        repo.handlePost(url: url, param: param) { result in
             self.loading = false
-            // If Error arises from Network
-            if let err = err {
+            
+            switch result {
+            case .success(let res):
+                // Exception errors from server
+                if let exeption = res.exceptionName {
+                    self.status = "Server error: \(exeption)"
+                    self.showAlert = true
+                }
+                
+                if let u = res.data {
+                    self.user = u
+                }
+                
+            case .failure(let err):
+                // Network Error
                 self.status = err.localizedDescription
                 self.showAlert = true
-                return
             }
             
-            // If Error arises from response details
-            if let exception = res?.exceptionName {
-                self.status = exception
-                self.showAlert = true
-                return
-            }
-            
-            if let user = res?.data {
-                self.user = user
-            }
         }
     }
     
@@ -99,24 +100,26 @@ final class UserViewModel: ObservableObject {
         "newPassword": newPassword,
         "confirmPassword": confirmPassword ] as [String : Any]
         
-        repo.handlePost(url: url, param: param) { (res, err) in
-            self.loading = false
-            // If Error arises from Network
-            if let err = err {
-                self.status = err.localizedDescription
+        repo.handlePost(url: url, param: param) { result in
+        self.loading = false
+        
+        switch result {
+        case .success(let res):
+            // Exception errors from server
+            if let exeption = res.exceptionName {
+                self.status = "Server error: \(exeption)"
                 self.showAlert = true
-                return
             }
             
-            // If Error arises from response details
-            if let exception = res?.exceptionName {
-                self.status = exception
-                self.showAlert = true
-                return
+            if let u = res.data {
+                self.user = u
             }
             
-            self.status = res!.message
+        case .failure(let err):
+            // Network Error
+            self.status = err.localizedDescription
             self.showAlert = true
+        }
         }
     }
     
