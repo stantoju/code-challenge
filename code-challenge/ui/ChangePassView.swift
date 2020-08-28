@@ -123,6 +123,7 @@ struct ChangePassView: View {
     }
 }
 
+
 struct ChangePassView_Previews: PreviewProvider {
     static var previews: some View {
         ChangePassView(user: User(firstName: "Stan", userName: "Toju", lastName: "Spyke"))
