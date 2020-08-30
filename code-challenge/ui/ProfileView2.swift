@@ -94,7 +94,7 @@ struct ProfileView2: View {
             .navigationBarTitle("User Profile")
         .navigationBarItems(trailing: self.vm.loading ? Spinner(): nil)
         .alert(isPresented: $vm.showAlert) {
-            Alert(title: Text("Oops!"), message: Text(vm.status), dismissButton: .default(Text("OK")))
+            Alert(title: Text(vm.statusHeader), message: Text(vm.status), dismissButton: .default(Text("OK")))
            }
     }
 }

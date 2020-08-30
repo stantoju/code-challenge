@@ -11,6 +11,7 @@ final class UserViewModel: ObservableObject {
     
     var mockApi = MockAPI()
     @Published var status = ""
+    @Published var statusHeader = "Oops!"
     @Published var loading = false
     @Published var showAlert = false
     @Published var user: User?
@@ -87,6 +88,7 @@ final class UserViewModel: ObservableObject {
         switch result {
         case .success(let res):
             self.status = res.message
+            self.statusHeader = "Success"
             self.showAlert = true
             
         case .failure(let err):
