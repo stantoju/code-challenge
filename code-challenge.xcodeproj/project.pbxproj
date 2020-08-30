@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC6AB1D124FACE9300956583 /* ProfileView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AB1D024FACE9300956583 /* ProfileView2.swift */; };
+		FC6AB1D424FAF77800956583 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AB1D324FAF77800956583 /* DashboardView.swift */; };
+		FC6AB1D724FB634200956583 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AB1D624FB634200956583 /* RequestProtocol.swift */; };
+		FC6AB1D924FB640000956583 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AB1D824FB640000956583 /* MockApi.swift */; };
+		FC6AB1DE24FB83C100956583 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AB1DD24FB83C100956583 /* MockError.swift */; };
 		FC8DDAFA24F7F8D000E92A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDAF924F7F8D000E92A91 /* AppDelegate.swift */; };
 		FC8DDAFC24F7F8D000E92A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDAFB24F7F8D000E92A91 /* SceneDelegate.swift */; };
 		FC8DDAFE24F7F8D000E92A91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDAFD24F7F8D000E92A91 /* ContentView.swift */; };
@@ -19,13 +24,16 @@
 		FC8DDB1A24F8062F00E92A91 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB1924F8062F00E92A91 /* User.swift */; };
 		FC8DDB1C24F80A6200E92A91 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB1B24F80A6200E92A91 /* UserRepo.swift */; };
 		FC8DDB2024F85D9800E92A91 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB1F24F85D9800E92A91 /* UserViewModel.swift */; };
-		FC8DDB2224F8BAE600E92A91 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB2124F8BAE600E92A91 /* ProfileView.swift */; };
-		FC8DDB2424F8BB0100E92A91 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB2324F8BB0100E92A91 /* EditProfileView.swift */; };
-		FC8DDB2624F8BB1C00E92A91 /* ChangePassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB2524F8BB1C00E92A91 /* ChangePassView.swift */; };
 		FC8DDB2924F8E2C200E92A91 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DDB2824F8E2C200E92A91 /* Spinner.swift */; };
+		FCE7736424FBBACB00ADF280 /* RealApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE7736324FBBACA00ADF280 /* RealApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC6AB1D024FACE9300956583 /* ProfileView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView2.swift; sourceTree = "<group>"; };
+		FC6AB1D324FAF77800956583 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FC6AB1D624FB634200956583 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		FC6AB1D824FB640000956583 /* MockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
+		FC6AB1DD24FB83C100956583 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
 		FC8DDAF624F7F8D000E92A91 /* code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8DDAF924F7F8D000E92A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC8DDAFB24F7F8D000E92A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,10 +48,8 @@
 		FC8DDB1924F8062F00E92A91 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC8DDB1B24F80A6200E92A91 /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
 		FC8DDB1F24F85D9800E92A91 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		FC8DDB2124F8BAE600E92A91 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		FC8DDB2324F8BB0100E92A91 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
-		FC8DDB2524F8BB1C00E92A91 /* ChangePassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassView.swift; sourceTree = "<group>"; };
 		FC8DDB2824F8E2C200E92A91 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		FCE7736324FBBACA00ADF280 /* RealApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC6AB1DC24FB82DB00956583 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				FC6AB1DD24FB83C100956583 /* MockError.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		FC8DDAED24F7F8CF00E92A91 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +90,8 @@
 		FC8DDAF824F7F8D000E92A91 /* code-challenge */ = {
 			isa = PBXGroup;
 			children = (
-				FC8DDB1624F803FB00E92A91 /* repository */,
+				FC6AB1DC24FB82DB00956583 /* util */,
+				FC8DDB1624F803FB00E92A91 /* service */,
 				FC8DDB1024F7FAEB00E92A91 /* network */,
 				FC8DDB0F24F7FA7500E92A91 /* model */,
 				FC8DDB0E24F7FA6200E92A91 /* viewmodel */,
@@ -104,9 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				FC8DDB2724F8E2AD00E92A91 /* component */,
-				FC8DDB2124F8BAE600E92A91 /* ProfileView.swift */,
-				FC8DDB2324F8BB0100E92A91 /* EditProfileView.swift */,
-				FC8DDB2524F8BB1C00E92A91 /* ChangePassView.swift */,
+				FC6AB1D024FACE9300956583 /* ProfileView2.swift */,
+				FC6AB1D324FAF77800956583 /* DashboardView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -131,18 +145,20 @@
 		FC8DDB1024F7FAEB00E92A91 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				FC6AB1D624FB634200956583 /* RequestProtocol.swift */,
 				FC8DDB1224F7FB6300E92A91 /* Http.swift */,
 				FC8DDB1424F7FD2900E92A91 /* EndPoints.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
 		};
-		FC8DDB1624F803FB00E92A91 /* repository */ = {
+		FC8DDB1624F803FB00E92A91 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				FC8DDB1B24F80A6200E92A91 /* UserRepo.swift */,
+				FCE7736524FBBB5200ADF280 /* real */,
+				FC6AB1D824FB640000956583 /* MockApi.swift */,
 			);
-			path = repository;
+			path = service;
 			sourceTree = "<group>";
 		};
 		FC8DDB2724F8E2AD00E92A91 /* component */ = {
@@ -151,6 +167,15 @@
 				FC8DDB2824F8E2C200E92A91 /* Spinner.swift */,
 			);
 			path = component;
+			sourceTree = "<group>";
+		};
+		FCE7736524FBBB5200ADF280 /* real */ = {
+			isa = PBXGroup;
+			children = (
+				FCE7736324FBBACA00ADF280 /* RealApi.swift */,
+				FC8DDB1B24F80A6200E92A91 /* UserRepo.swift */,
+			);
+			path = real;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,17 +250,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8DDAFA24F7F8D000E92A91 /* AppDelegate.swift in Sources */,
-				FC8DDB2624F8BB1C00E92A91 /* ChangePassView.swift in Sources */,
+				FC6AB1D924FB640000956583 /* MockApi.swift in Sources */,
 				FC8DDB1524F7FD2900E92A91 /* EndPoints.swift in Sources */,
 				FC8DDB2924F8E2C200E92A91 /* Spinner.swift in Sources */,
 				FC8DDB1324F7FB6300E92A91 /* Http.swift in Sources */,
+				FC6AB1D124FACE9300956583 /* ProfileView2.swift in Sources */,
+				FCE7736424FBBACB00ADF280 /* RealApi.swift in Sources */,
 				FC8DDB2024F85D9800E92A91 /* UserViewModel.swift in Sources */,
+				FC6AB1D424FAF77800956583 /* DashboardView.swift in Sources */,
+				FC6AB1D724FB634200956583 /* RequestProtocol.swift in Sources */,
 				FC8DDAFC24F7F8D000E92A91 /* SceneDelegate.swift in Sources */,
 				FC8DDB1824F8062000E92A91 /* Response.swift in Sources */,
-				FC8DDB2424F8BB0100E92A91 /* EditProfileView.swift in Sources */,
 				FC8DDAFE24F7F8D000E92A91 /* ContentView.swift in Sources */,
+				FC6AB1DE24FB83C100956583 /* MockError.swift in Sources */,
 				FC8DDB1C24F80A6200E92A91 /* UserRepo.swift in Sources */,
-				FC8DDB2224F8BAE600E92A91 /* ProfileView.swift in Sources */,
 				FC8DDB1A24F8062F00E92A91 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

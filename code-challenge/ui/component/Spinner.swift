@@ -15,7 +15,7 @@ struct Spinner: View {
         VStack {
             Circle()
                 .trim( from: 0, to: 0.8)
-                .stroke(AngularGradient(gradient: .init(colors: [Color(.white), Color("color-accent")]), center: .center), style: StrokeStyle(lineWidth: 4, lineCap: .round))
+                .stroke(AngularGradient(gradient: .init(colors: [Color(.white), Color("color-new")]), center: .center), style: StrokeStyle(lineWidth: 4, lineCap: .round))
             .frame(width: 20, height: 20)
                 .rotationEffect(.init(degrees: self.animate ? 360 : 0))
                 .animation(Animation.linear(duration: 0.7).repeatForever(autoreverses: false))
